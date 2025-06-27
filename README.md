@@ -6,7 +6,7 @@ A responsive, real-world Task Management Dashboard built with **React** and **Ty
 
 ## ✨ Reflection
 ### 📌 React & TypeScript Implementation
-- This dashboard was initialized using Vite with the React + TypeScript template. All components were typed using custom interfaces (Task, TaskProps, etc.) defined in types/index.ts, ensuring strong type safety and clean prop validation. State was managed with React’s useState and useEffect hooks.
+This dashboard was initialized using Vite with the React + TypeScript template. All components were typed using custom interfaces (Task, TaskProps, etc.) defined in types/index.ts, ensuring strong type safety and clean prop validation. State was managed with React’s useState and useEffect hooks.
 
 ## 🧩 Component Composition & State Management
 Components were broken down and organized by responsibility:
