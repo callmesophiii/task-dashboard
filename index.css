@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #a946e7;
+  --accent-color: #646cff;
+  --hover-accent: #535bf2;
+  --background-dark: #1e1e1e;
+  --text-dark: rgba(255, 255, 255, 0.87);
+  --background-light: #ffffff;
+  --text-light: #213547;
+
+  font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-dark);
+  background-color: var(--background-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  padding: 2rem;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--hover-accent);
+}
+
+.dashboard-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #f0f0f0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+input,
+textarea,
+select {
+  padding: 0.75rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 140px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #6c63ff, #8f77ff);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #5a54e6, #7c6bff);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+
+
+.container {
+  background-color: #2a2a2a;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-light);
+    background-color: var(--background-light);
+  }
+
+  body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+
+  .container {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    background-color: var(--accent-color);
+    color: white;
+  }
+
+  button:hover {
+    background-color: var(--hover-accent);
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+}
